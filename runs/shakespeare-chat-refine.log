@@ -1,0 +1,40 @@
+chat examples: 804 train, 234 validation; answer-only loss; vocab: 96; backend: accelerate
+warm start from checkpoints/shakespeare-chat-stage1.bin; optimizer reset, architecture from checkpoint
+GPT(vocab=96 dim=192 heads=6 layers=6 ctx=256 params=2755680)
+initial validation 0.1199
+step 1/3000 loss 0.1632 val 0.1197 ppl 1.13 lr 0.000002 tokens/s 625 elapsed 819ms
+step 200/3000 loss 0.0566 val 0.0722 ppl 1.07 lr 0.000150 tokens/s 4196 elapsed 24.405s
+step 400/3000 loss 0.0325 val 0.0602 ppl 1.06 lr 0.000146 tokens/s 4075 elapsed 50.258s
+step 600/3000 loss 0.0582 val 0.0484 ppl 1.05 lr 0.000140 tokens/s 4103 elapsed 1m14.866s
+step 800/3000 loss 0.0568 val 0.0378 ppl 1.04 lr 0.000132 tokens/s 4126 elapsed 1m39.277s
+step 1000/3000 loss 0.0169 val 0.0350 ppl 1.04 lr 0.000120 tokens/s 3733 elapsed 2m17.149s
+step 1200/3000 loss 0.0194 val 0.0307 ppl 1.03 lr 0.000107 tokens/s 3649 elapsed 2m48.359s
+step 1400/3000 loss 0.0179 val 0.0296 ppl 1.03 lr 0.000093 tokens/s 3488 elapsed 3m25.523s
+step 1600/3000 loss 0.0018 val 0.0216 ppl 1.02 lr 0.000079 tokens/s 3092 elapsed 4m24.91s
+step 1800/3000 loss 0.0122 val 0.0231 ppl 1.02 lr 0.000064 tokens/s 2890 elapsed 5m18.891s
+step 2000/3000 loss 0.0237 val 0.0221 ppl 1.02 lr 0.000051 tokens/s 2716 elapsed 6m17.05s
+step 2200/3000 loss 0.0037 val 0.0242 ppl 1.02 lr 0.000039 tokens/s 2602 elapsed 7m12.977s
+step 2400/3000 loss 0.0142 val 0.0218 ppl 1.02 lr 0.000029 tokens/s 2703 elapsed 7m34.662s
+step 2600/3000 loss 0.0138 val 0.0192 ppl 1.02 lr 0.000021 tokens/s 2800 elapsed 7m55.437s
+step 2800/3000 loss 0.0240 val 0.0189 ppl 1.02 lr 0.000017 tokens/s 2890 elapsed 8m16.052s
+step 3000/3000 loss 0.0115 val 0.0188 ppl 1.02 lr 0.000015 tokens/s 2953 elapsed 8m40.069s
+best validation 0.0188 at step 3000
+saved checkpoint to checkpoints/shakespeare-chat.bin
+      522.31 real       509.57 user        20.07 sys
+           253935616  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              189647  page reclaims
+                 311  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+               25183  signals received
+                 719  voluntary context switches
+             1510905  involuntary context switches
+       2625454568263  instructions retired
+        896408490861  cycles elapsed
+           241420736  peak memory footprint

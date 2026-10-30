@@ -1,0 +1,56 @@
+warm start from checkpoints/shakespeare-large.bin; optimizer reset, architecture from checkpoint
+corpus: 1115394 chars, vocab: 65, backend: accelerate
+train chars: 1003854, validation chars: 111540
+GPT(vocab=65 dim=192 heads=6 layers=6 ctx=256 params=2743745)
+initial validation 1.4812
+step 1/3000 loss 1.3610 val 1.4812 ppl 4.40 lr 0.000001 tokens/s 274 elapsed 1.866s
+step 100/3000 loss 1.1680 val 1.4942 ppl 4.46 lr 0.000100 tokens/s 2614 elapsed 19.589s
+step 200/3000 loss 1.3214 val 1.5024 ppl 4.49 lr 0.000100 tokens/s 3320 elapsed 30.842s
+step 300/3000 loss 1.2846 val 1.5012 ppl 4.49 lr 0.000099 tokens/s 3644 elapsed 42.156s
+step 400/3000 loss 1.3995 val 1.5009 ppl 4.49 lr 0.000098 tokens/s 3718 elapsed 55.083s
+step 500/3000 loss 1.4100 val 1.5059 ppl 4.51 lr 0.000096 tokens/s 3689 elapsed 1m9.4s
+step 600/3000 loss 1.2569 val 1.5013 ppl 4.49 lr 0.000094 tokens/s 3535 elapsed 1m26.91s
+step 700/3000 loss 1.3715 val 1.5010 ppl 4.49 lr 0.000091 tokens/s 3455 elapsed 1m43.733s
+step 800/3000 loss 1.2163 val 1.4965 ppl 4.47 lr 0.000088 tokens/s 3372 elapsed 2m1.463s
+step 900/3000 loss 1.1754 val 1.4932 ppl 4.45 lr 0.000084 tokens/s 3420 elapsed 2m14.737s
+step 1000/3000 loss 1.2209 val 1.4972 ppl 4.47 lr 0.000080 tokens/s 3488 elapsed 2m26.809s
+step 1100/3000 loss 1.3744 val 1.4937 ppl 4.45 lr 0.000076 tokens/s 3542 elapsed 2m39.01s
+step 1200/3000 loss 1.1139 val 1.4917 ppl 4.44 lr 0.000072 tokens/s 3592 elapsed 2m51.041s
+step 1300/3000 loss 1.3375 val 1.4902 ppl 4.44 lr 0.000067 tokens/s 3616 elapsed 3m4.09s
+step 1400/3000 loss 1.1567 val 1.4862 ppl 4.42 lr 0.000062 tokens/s 3608 elapsed 3m18.656s
+step 1500/3000 loss 1.1693 val 1.4883 ppl 4.43 lr 0.000057 tokens/s 3598 elapsed 3m33.432s
+step 1600/3000 loss 1.2584 val 1.4891 ppl 4.43 lr 0.000053 tokens/s 3626 elapsed 3m45.896s
+step 1700/3000 loss 1.1591 val 1.4869 ppl 4.42 lr 0.000048 tokens/s 3662 elapsed 3m57.7s
+step 1800/3000 loss 1.1190 val 1.4892 ppl 4.43 lr 0.000043 tokens/s 3704 elapsed 4m8.831s
+step 1900/3000 loss 1.2666 val 1.4868 ppl 4.42 lr 0.000038 tokens/s 3742 elapsed 4m19.939s
+step 2000/3000 loss 1.2584 val 1.4841 ppl 4.41 lr 0.000034 tokens/s 3776 elapsed 4m31.201s
+step 2100/3000 loss 1.3852 val 1.4860 ppl 4.42 lr 0.000030 tokens/s 3807 elapsed 4m42.431s
+step 2200/3000 loss 1.1574 val 1.4808 ppl 4.40 lr 0.000026 tokens/s 3773 elapsed 4m58.542s
+step 2300/3000 loss 1.2240 val 1.4805 ppl 4.40 lr 0.000022 tokens/s 3615 elapsed 5m25.766s
+step 2400/3000 loss 1.2723 val 1.4798 ppl 4.39 lr 0.000019 tokens/s 3537 elapsed 5m47.456s
+step 2500/3000 loss 1.0602 val 1.4780 ppl 4.38 lr 0.000016 tokens/s 3551 elapsed 6m0.46s
+step 2600/3000 loss 1.3665 val 1.4767 ppl 4.38 lr 0.000014 tokens/s 3583 elapsed 6m11.572s
+step 2700/3000 loss 1.3317 val 1.4787 ppl 4.39 lr 0.000012 tokens/s 3600 elapsed 6m23.958s
+step 2800/3000 loss 1.2781 val 1.4778 ppl 4.38 lr 0.000011 tokens/s 3543 elapsed 6m44.68s
+step 2900/3000 loss 1.1361 val 1.4773 ppl 4.38 lr 0.000010 tokens/s 3565 elapsed 6m56.453s
+step 3000/3000 loss 0.9727 val 1.4760 ppl 4.38 lr 0.000010 tokens/s 3593 elapsed 7m7.506s
+best validation 1.4760 at step 3000
+saved checkpoint to checkpoints/shakespeare-parallel.bin
+      429.37 real       492.75 user        12.96 sys
+           261783552  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               99155  page reclaims
+                 100  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+               17620  signals received
+                 441  voluntary context switches
+              925322  involuntary context switches
+       2993496173293  instructions retired
+        881175716836  cycles elapsed
+           246892864  peak memory footprint

@@ -1,0 +1,31 @@
+corpus: 1115394 chars, vocab: 65, backend: accelerate
+train chars: 1003854, validation chars: 111540
+GPT(vocab=65 dim=192 heads=6 layers=6 ctx=256 params=2743745)
+step 1/5000 loss 4.2066 val 4.1491 ppl 63.37 lr 0.000008 tokens/s 5991 elapsed 342ms
+step 200/5000 loss 2.4678 val 2.4894 ppl 12.05 lr 0.000799 tokens/s 6728 elapsed 1m0.879s
+step 400/5000 loss 2.3735 val 2.4060 ppl 11.09 lr 0.000793 tokens/s 7421 elapsed 1m50.395s
+step 600/5000 loss 2.2853 val 2.2868 ppl 9.84 lr 0.000782 tokens/s 7661 elapsed 2m40.393s
+step 800/5000 loss 2.0855 val 2.1093 ppl 8.24 lr 0.000764 tokens/s 7706 elapsed 3m32.611s
+step 1000/5000 loss 1.8991 val 1.9811 ppl 7.25 lr 0.000742 tokens/s 7599 elapsed 4m29.512s
+step 1200/5000 loss 1.7481 val 1.9017 ppl 6.70 lr 0.000714 tokens/s 7565 elapsed 5m24.87s
+step 1400/5000 loss 1.6697 val 1.8041 ppl 6.07 lr 0.000682 tokens/s 7440 elapsed 6m25.386s
+step 1600/5000 loss 1.6208 val 1.7543 ppl 5.78 lr 0.000646 tokens/s 7314 elapsed 7m28.048s
+step 1800/5000 loss 1.4765 val 1.7071 ppl 5.51 lr 0.000607 tokens/s 7289 elapsed 8m25.751s
+step 2000/5000 loss 1.4696 val 1.6777 ppl 5.35 lr 0.000564 tokens/s 7304 elapsed 9m20.772s
+step 2200/5000 loss 1.5848 val 1.6467 ppl 5.19 lr 0.000520 tokens/s 7279 elapsed 10m18.998s
+step 2400/5000 loss 1.4345 val 1.6211 ppl 5.06 lr 0.000475 tokens/s 7249 elapsed 11m18.085s
+step 2600/5000 loss 1.4139 val 1.5856 ppl 4.88 lr 0.000428 tokens/s 7234 elapsed 12m16.125s
+step 2800/5000 loss 1.3313 val 1.5637 ppl 4.78 lr 0.000383 tokens/s 7151 elapsed 13m21.847s
+step 3000/5000 loss 1.3960 val 1.5554 ppl 4.74 lr 0.000338 tokens/s 7135 elapsed 14m21.118s
+step 3200/5000 loss 1.3537 val 1.5448 ppl 4.69 lr 0.000294 tokens/s 7037 elapsed 15m31.281s
+step 3400/5000 loss 1.3311 val 1.5274 ppl 4.61 lr 0.000253 tokens/s 6998 elapsed 16m35.008s
+step 3600/5000 loss 1.3080 val 1.5124 ppl 4.54 lr 0.000216 tokens/s 7057 elapsed 17m24.758s
+step 3800/5000 loss 1.2929 val 1.5056 ppl 4.51 lr 0.000181 tokens/s 7099 elapsed 18m16.273s
+step 4000/5000 loss 1.3314 val 1.4995 ppl 4.48 lr 0.000151 tokens/s 7092 elapsed 19m15.173s
+step 4200/5000 loss 1.3111 val 1.4897 ppl 4.44 lr 0.000126 tokens/s 7099 elapsed 20m11.737s
+step 4400/5000 loss 1.2300 val 1.4815 ppl 4.40 lr 0.000106 tokens/s 7114 elapsed 21m6.637s
+step 4600/5000 loss 1.2417 val 1.4838 ppl 4.41 lr 0.000092 tokens/s 7129 elapsed 22m1.412s
+step 4800/5000 loss 1.2269 val 1.4824 ppl 4.40 lr 0.000083 tokens/s 7145 elapsed 22m55.782s
+step 5000/5000 loss 1.2139 val 1.4812 ppl 4.40 lr 0.000080 tokens/s 7157 elapsed 23m50.672s
+best validation 1.4812 at step 5000
+saved checkpoint to checkpoints/shakespeare-large.bin

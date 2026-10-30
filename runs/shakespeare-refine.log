@@ -1,0 +1,23 @@
+warm start from checkpoints/shakespeare-stage1.bin; optimizer reset, architecture from checkpoint
+corpus: 1115394 chars, vocab: 65, backend: accelerate
+train chars: 1003854, validation chars: 111540
+GPT(vocab=65 dim=128 heads=4 layers=4 ctx=128 params=826433)
+initial validation 1.5916
+step 1/3000 loss 1.4302 val 1.5914 ppl 4.91 lr 0.000004 tokens/s 4021 elapsed 509ms
+step 200/3000 loss 1.3751 val 1.5705 ppl 4.81 lr 0.000399 tokens/s 21184 elapsed 19.335s
+step 400/3000 loss 1.3740 val 1.5667 ppl 4.79 lr 0.000391 tokens/s 21246 elapsed 38.558s
+step 600/3000 loss 1.3187 val 1.5712 ppl 4.81 lr 0.000374 tokens/s 21210 elapsed 57.935s
+step 800/3000 loss 1.3380 val 1.5536 ppl 4.73 lr 0.000351 tokens/s 20871 elapsed 1m18.5s
+step 1000/3000 loss 1.3316 val 1.5352 ppl 4.64 lr 0.000321 tokens/s 20696 elapsed 1m38.956s
+step 1200/3000 loss 1.2770 val 1.5296 ppl 4.62 lr 0.000287 tokens/s 20821 elapsed 1m58.036s
+step 1400/3000 loss 1.3738 val 1.5249 ppl 4.59 lr 0.000249 tokens/s 20873 elapsed 2m17.367s
+step 1600/3000 loss 1.3229 val 1.5192 ppl 4.57 lr 0.000210 tokens/s 19803 elapsed 2m45.472s
+step 1800/3000 loss 1.2698 val 1.5159 ppl 4.55 lr 0.000172 tokens/s 19565 elapsed 3m8.422s
+step 2000/3000 loss 1.2839 val 1.5058 ppl 4.51 lr 0.000136 tokens/s 19008 elapsed 3m35.491s
+step 2200/3000 loss 1.2884 val 1.5046 ppl 4.50 lr 0.000103 tokens/s 19046 elapsed 3m56.57s
+step 2400/3000 loss 1.3151 val 1.4992 ppl 4.48 lr 0.000077 tokens/s 19165 elapsed 4m16.463s
+step 2600/3000 loss 1.3150 val 1.4979 ppl 4.47 lr 0.000057 tokens/s 19268 elapsed 4m36.349s
+step 2800/3000 loss 1.2677 val 1.4959 ppl 4.46 lr 0.000044 tokens/s 19267 elapsed 4m57.633s
+step 3000/3000 loss 1.2134 val 1.4946 ppl 4.46 lr 0.000040 tokens/s 19224 elapsed 5m19.594s
+best validation 1.4946 at step 3000
+saved checkpoint to checkpoints/shakespeare-good.bin

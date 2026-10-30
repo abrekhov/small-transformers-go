@@ -1,0 +1,20 @@
+corpus: 1115394 chars, vocab: 65, backend: accelerate
+train chars: 1003854, validation chars: 111540
+GPT(vocab=65 dim=128 heads=4 layers=4 ctx=128 params=826433)
+step 1/6000 loss 4.1949 val 4.1773 ppl 65.19 lr 0.000010 tokens/s 7576 elapsed 270ms
+step 200/6000 loss 2.4411 val 2.4509 ppl 11.60 lr 0.000999 tokens/s 5352 elapsed 1m16.536s
+step 400/6000 loss 2.2577 val 2.2780 ppl 9.76 lr 0.000994 tokens/s 5712 elapsed 2m23.416s
+step 600/6000 loss 2.0751 val 2.1230 ppl 8.36 lr 0.000984 tokens/s 5753 elapsed 3m33.608s
+step 800/6000 loss 1.9798 val 2.0198 ppl 7.54 lr 0.000969 tokens/s 5666 elapsed 4m49.166s
+step 1000/6000 loss 1.8082 val 1.9303 ppl 6.89 lr 0.000949 tokens/s 5549 elapsed 6m9.075s
+step 1200/6000 loss 1.7323 val 1.8879 ppl 6.61 lr 0.000925 tokens/s 5336 elapsed 7m40.59s
+step 1400/6000 loss 1.5767 val 1.8302 ppl 6.23 lr 0.000896 tokens/s 5336 elapsed 8m57.318s
+step 1600/6000 loss 1.5956 val 1.7969 ppl 6.03 lr 0.000864 tokens/s 5166 elapsed 10m34.346s
+step 1800/6000 loss 1.6421 val 1.7354 ppl 5.67 lr 0.000828 tokens/s 5070 elapsed 12m7.115s
+step 2000/6000 loss 1.5855 val 1.7259 ppl 5.62 lr 0.000789 tokens/s 4990 elapsed 13m40.78s
+step 2200/6000 loss 1.5080 val 1.6780 ppl 5.35 lr 0.000747 tokens/s 4996 elapsed 15m1.923s
+step 2400/6000 loss 1.3960 val 1.6661 ppl 5.29 lr 0.000703 tokens/s 4985 elapsed 16m25.911s
+step 2600/6000 loss 1.5388 val 1.6487 ppl 5.20 lr 0.000657 tokens/s 4820 elapsed 18m24.742s
+step 2800/6000 loss 1.3889 val 1.6159 ppl 5.03 lr 0.000610 tokens/s 4798 elapsed 19m55.041s
+step 3000/6000 loss 1.3531 val 1.6066 ppl 4.99 lr 0.000562 tokens/s 4794 elapsed 21m21.68s
+step 3200/6000 loss 1.4551 val 1.5916 ppl 4.91 lr 0.000514 tokens/s 4817 elapsed 22m40.406s

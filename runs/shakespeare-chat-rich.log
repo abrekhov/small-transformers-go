@@ -1,0 +1,37 @@
+chat examples: 27108 train, 351 validation; answer-only loss; vocab: 96; backend: accelerate
+warm start from checkpoints/shakespeare-chat-stage2.bin; optimizer reset, architecture from checkpoint
+GPT(vocab=96 dim=192 heads=6 layers=6 ctx=256 params=2755680)
+initial validation 0.0384
+step 1/6000 loss 0.0598 val 0.0383 ppl 1.04 lr 0.000002 tokens/s 306 elapsed 1.674s
+step 200/6000 loss 0.0318 val 0.0550 ppl 1.06 lr 0.000200 tokens/s 4413 elapsed 23.206s
+step 400/6000 loss 0.0829 val 0.0582 ppl 1.06 lr 0.000199 tokens/s 4657 elapsed 43.975s
+step 600/6000 loss 0.0879 val 0.0536 ppl 1.06 lr 0.000197 tokens/s 4760 elapsed 1m4.54s
+step 800/6000 loss 0.0583 val 0.0600 ppl 1.06 lr 0.000194 tokens/s 4750 elapsed 1m26.224s
+step 1000/6000 loss 0.0471 val 0.0453 ppl 1.05 lr 0.000190 tokens/s 4742 elapsed 1m47.961s
+step 1200/6000 loss 0.0915 val 0.0507 ppl 1.05 lr 0.000185 tokens/s 4772 elapsed 2m8.763s
+step 1400/6000 loss 0.0309 val 0.0576 ppl 1.06 lr 0.000179 tokens/s 4773 elapsed 2m30.192s
+step 1600/6000 loss 0.0224 val 0.0486 ppl 1.05 lr 0.000173 tokens/s 4758 elapsed 2m52.186s
+step 1800/6000 loss 0.0288 val 0.0406 ppl 1.04 lr 0.000166 tokens/s 4581 elapsed 3m21.197s
+step 2000/6000 loss 0.0479 val 0.0366 ppl 1.04 lr 0.000158 tokens/s 4201 elapsed 4m3.752s
+step 2200/6000 loss 0.0223 val 0.0432 ppl 1.04 lr 0.000149 tokens/s 3952 elapsed 4m44.994s
+step 2400/6000 loss 0.0223 val 0.0321 ppl 1.03 lr 0.000141 tokens/s 4019 elapsed 5m5.781s
+step 2600/6000 loss 0.0278 val 0.0354 ppl 1.04 lr 0.000131 tokens/s 4036 elapsed 5m29.791s
+time: command terminated abnormally
+      340.29 real       394.43 user        11.83 sys
+           343883776  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              110555  page reclaims
+                  51  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+               19657  signals received
+                 433  voluntary context switches
+              566146  involuntary context switches
+       2453089548819  instructions retired
+        738148848123  cycles elapsed
+           332237376  peak memory footprint

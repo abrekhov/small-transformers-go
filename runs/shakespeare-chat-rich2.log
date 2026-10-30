@@ -1,0 +1,56 @@
+chat validation focuses on the first 32 reply characters; 0 means full reply
+chat examples: 39744 train, 585 validation; answer-only loss; vocab: 96; backend: accelerate
+warm start from checkpoints/shakespeare-chat-stage3.bin; optimizer reset, architecture from checkpoint
+GPT(vocab=96 dim=192 heads=6 layers=6 ctx=256 params=2755680)
+initial validation 0.1160
+step 1/6000 loss 0.0235 val 0.1160 ppl 1.12 lr 0.000002 tokens/s 297 elapsed 1.722s
+step 200/6000 loss 0.0847 val 0.1351 ppl 1.14 lr 0.000150 tokens/s 4249 elapsed 24.102s
+step 400/6000 loss 0.3175 val 0.1569 ppl 1.17 lr 0.000149 tokens/s 4209 elapsed 48.656s
+step 600/6000 loss 0.0508 val 0.1341 ppl 1.14 lr 0.000148 tokens/s 4437 elapsed 1m9.239s
+step 800/6000 loss 0.0656 val 0.1140 ppl 1.12 lr 0.000145 tokens/s 4553 elapsed 1m29.965s
+step 1000/6000 loss 0.0557 val 0.1257 ppl 1.13 lr 0.000142 tokens/s 4630 elapsed 1m50.572s
+step 1200/6000 loss 0.0240 val 0.1262 ppl 1.13 lr 0.000139 tokens/s 4679 elapsed 2m11.322s
+step 1400/6000 loss 0.0843 val 0.1253 ppl 1.13 lr 0.000134 tokens/s 4717 elapsed 2m31.97s
+step 1600/6000 loss 0.0463 val 0.1299 ppl 1.14 lr 0.000130 tokens/s 4750 elapsed 2m52.449s
+step 1800/6000 loss 0.0083 val 0.1081 ppl 1.11 lr 0.000124 tokens/s 4777 elapsed 3m12.919s
+step 2000/6000 loss 0.0393 val 0.1099 ppl 1.12 lr 0.000118 tokens/s 4749 elapsed 3m35.634s
+step 2200/6000 loss 0.0146 val 0.1087 ppl 1.11 lr 0.000112 tokens/s 4605 elapsed 4m4.581s
+step 2400/6000 loss 0.0297 val 0.1102 ppl 1.12 lr 0.000105 tokens/s 4635 elapsed 4m25.125s
+step 2600/6000 loss 0.0642 val 0.1075 ppl 1.11 lr 0.000099 tokens/s 4659 elapsed 4m45.749s
+step 2800/6000 loss 0.0178 val 0.0913 ppl 1.10 lr 0.000091 tokens/s 4682 elapsed 5m6.192s
+step 3000/6000 loss 0.1206 val 0.0977 ppl 1.10 lr 0.000084 tokens/s 4702 elapsed 5m26.7s
+step 3200/6000 loss 0.1202 val 0.0869 ppl 1.09 lr 0.000077 tokens/s 4721 elapsed 5m47.053s
+step 3400/6000 loss 0.0105 val 0.0911 ppl 1.10 lr 0.000070 tokens/s 4738 elapsed 6m7.381s
+step 3600/6000 loss 0.0087 val 0.0924 ppl 1.10 lr 0.000063 tokens/s 4753 elapsed 6m27.793s
+step 3800/6000 loss 0.0374 val 0.0899 ppl 1.09 lr 0.000056 tokens/s 4764 elapsed 6m48.437s
+step 4000/6000 loss 0.0408 val 0.0869 ppl 1.09 lr 0.000050 tokens/s 4777 elapsed 7m8.724s
+step 4200/6000 loss 0.0047 val 0.0872 ppl 1.09 lr 0.000044 tokens/s 4788 elapsed 7m29.091s
+step 4400/6000 loss 0.0522 val 0.0866 ppl 1.09 lr 0.000038 tokens/s 4796 elapsed 7m49.689s
+step 4600/6000 loss 0.0031 val 0.0872 ppl 1.09 lr 0.000033 tokens/s 4807 elapsed 8m9.991s
+step 4800/6000 loss 0.0170 val 0.0887 ppl 1.09 lr 0.000028 tokens/s 4816 elapsed 8m30.318s
+step 5000/6000 loss 0.0755 val 0.0877 ppl 1.09 lr 0.000024 tokens/s 4816 elapsed 8m51.591s
+step 5200/6000 loss 0.0100 val 0.0889 ppl 1.09 lr 0.000021 tokens/s 4817 elapsed 9m12.759s
+step 5400/6000 loss 0.0229 val 0.0937 ppl 1.10 lr 0.000018 tokens/s 4811 elapsed 9m34.627s
+step 5600/6000 loss 0.0109 val 0.0912 ppl 1.10 lr 0.000017 tokens/s 4816 elapsed 9m55.401s
+step 5800/6000 loss 0.0125 val 0.0972 ppl 1.10 lr 0.000015 tokens/s 4823 elapsed 10m15.682s
+step 6000/6000 loss 0.0119 val 0.0945 ppl 1.10 lr 0.000015 tokens/s 4830 elapsed 10m36.03s
+best validation 0.0866 at step 4400
+saved checkpoint to checkpoints/shakespeare-chat.bin
+      637.88 real       788.04 user        17.01 sys
+           384352256  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               63270  page reclaims
+                 312  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+               27297  signals received
+                 544  voluntary context switches
+              627225  involuntary context switches
+       5497007550999  instructions retired
+       1554609032057  cycles elapsed
+           375851776  peak memory footprint

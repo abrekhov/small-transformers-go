@@ -1,0 +1,33 @@
+chat validation focuses on the first 32 reply characters; 0 means full reply
+chat examples: 27108 train, 585 validation; answer-only loss; vocab: 96; backend: accelerate
+warm start from checkpoints/shakespeare-chat-stage3.bin; optimizer reset, architecture from checkpoint
+GPT(vocab=96 dim=192 heads=6 layers=6 ctx=256 params=2755680)
+initial validation 0.1160
+step 1/5000 loss 0.2417 val 0.1159 ppl 1.12 lr 0.000002 tokens/s 224 elapsed 2.282s
+step 200/5000 loss 0.0352 val 0.1385 ppl 1.15 lr 0.000150 tokens/s 3639 elapsed 28.137s
+step 400/5000 loss 0.0408 val 0.1356 ppl 1.15 lr 0.000149 tokens/s 4151 elapsed 49.335s
+step 600/5000 loss 0.0278 val 0.1592 ppl 1.17 lr 0.000147 tokens/s 4393 elapsed 1m9.932s
+step 800/5000 loss 0.0782 val 0.1403 ppl 1.15 lr 0.000143 tokens/s 4386 elapsed 1m33.395s
+step 1000/5000 loss 0.0806 val 0.1336 ppl 1.14 lr 0.000139 tokens/s 3839 elapsed 2m13.366s
+step 1200/5000 loss 0.0183 val 0.1389 ppl 1.15 lr 0.000134 tokens/s 3983 elapsed 2m34.253s
+step 1400/5000 loss 0.1142 val 0.1483 ppl 1.16 lr 0.000128 tokens/s 4033 elapsed 2m57.73s
+step 1600/5000 loss 0.0416 val 0.1233 ppl 1.13 lr 0.000121 tokens/s 4119 elapsed 3m18.899s
+step 1800/5000 loss 0.0216 val 0.1373 ppl 1.15 lr 0.000114 tokens/s 4193 elapsed 3m39.806s
+step 2000/5000 loss 0.0310 val 0.1283 ppl 1.14 lr 0.000106 tokens/s 4236 elapsed 4m1.741s
+step 2200/5000 loss 0.0099 val 0.1386 ppl 1.15 lr 0.000098 tokens/s 4293 elapsed 4m22.399s
+step 2400/5000 loss 0.0158 val 0.1314 ppl 1.14 lr 0.000089 tokens/s 4286 elapsed 4m46.713s
+step 2600/5000 loss 0.0370 val 0.1228 ppl 1.13 lr 0.000080 tokens/s 4326 elapsed 5m7.705s
+step 2800/5000 loss 0.0084 val 0.1253 ppl 1.13 lr 0.000072 tokens/s 4344 elapsed 5m30.015s
+step 3000/5000 loss 0.0161 val 0.1195 ppl 1.13 lr 0.000063 tokens/s 4370 elapsed 5m51.497s
+step 3200/5000 loss 0.1324 val 0.1138 ppl 1.12 lr 0.000055 tokens/s 4395 elapsed 6m12.793s
+step 3400/5000 loss 0.0090 val 0.1162 ppl 1.12 lr 0.000048 tokens/s 4418 elapsed 6m34.046s
+step 3600/5000 loss 0.0384 val 0.1136 ppl 1.12 lr 0.000040 tokens/s 4443 elapsed 6m54.84s
+step 3800/5000 loss 0.0207 val 0.1132 ppl 1.12 lr 0.000034 tokens/s 4354 elapsed 7m26.896s
+step 4000/5000 loss 0.0102 val 0.1132 ppl 1.12 lr 0.000028 tokens/s 4370 elapsed 7m48.61s
+step 4200/5000 loss 0.0080 val 0.1101 ppl 1.12 lr 0.000024 tokens/s 4391 elapsed 8m9.777s
+step 4400/5000 loss 0.0125 val 0.1013 ppl 1.11 lr 0.000020 tokens/s 4384 elapsed 8m33.899s
+step 4600/5000 loss 0.0238 val 0.1016 ppl 1.11 lr 0.000017 tokens/s 4405 elapsed 8m54.661s
+step 4800/5000 loss 0.0091 val 0.1026 ppl 1.11 lr 0.000016 tokens/s 4427 elapsed 9m15.087s
+step 5000/5000 loss 0.0060 val 0.1031 ppl 1.11 lr 0.000015 tokens/s 4448 elapsed 9m35.579s
+best validation 0.1013 at step 4400
+saved checkpoint to checkpoints/shakespeare-chat.bin

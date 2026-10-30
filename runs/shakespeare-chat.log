@@ -1,0 +1,31 @@
+chat examples: 804 train, 234 validation; answer-only loss; vocab: 96; backend: accelerate
+warm start from checkpoints/shakespeare-parallel.bin; optimizer reset, architecture from checkpoint
+GPT(vocab=96 dim=192 heads=6 layers=6 ctx=256 params=2755680)
+initial validation 2.0122
+step 1/6000 loss 2.1335 val 2.0071 ppl 7.44 lr 0.000003 tokens/s 618 elapsed 828ms
+step 200/6000 loss 1.0405 val 0.9687 ppl 2.63 lr 0.000300 tokens/s 4826 elapsed 21.219s
+step 400/6000 loss 0.4913 val 0.7465 ppl 2.11 lr 0.000298 tokens/s 4957 elapsed 41.313s
+step 600/6000 loss 0.4311 val 0.5287 ppl 1.70 lr 0.000295 tokens/s 4994 elapsed 1m1.519s
+step 800/6000 loss 0.1758 val 0.2927 ppl 1.34 lr 0.000291 tokens/s 5014 elapsed 1m21.699s
+step 1000/6000 loss 0.1484 val 0.2411 ppl 1.27 lr 0.000285 tokens/s 4990 elapsed 1m42.608s
+step 1200/6000 loss 0.1287 val 0.2070 ppl 1.23 lr 0.000277 tokens/s 4810 elapsed 2m7.724s
+step 1400/6000 loss 0.1494 val 0.1199 ppl 1.13 lr 0.000269 tokens/s 4509 elapsed 2m38.974s
+time: command terminated abnormally
+      169.44 real       200.10 user         5.04 sys
+           252821504  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               35292  page reclaims
+                 311  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                7588  signals received
+                 327  voluntary context switches
+              234239  involuntary context switches
+       1297934935141  instructions retired
+        374142234608  cycles elapsed
+           235981120  peak memory footprint
